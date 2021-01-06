@@ -1,25 +1,33 @@
-import React from "react";
+import React, { Component } from "react";
 import logo from './logo.svg';
 import './App.css';
 
-import Home from "./Home";
-import Geospat from "./Geospat";
-import About from "./About";
-import Contact from "./Contact";
-
-import { Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch, Link, Redirect } from "react-router-dom";
 import Navbar from "./components/Navbar/Navbar";
 
-function App() {
+// Pages
+import Home from "./pages/Home";
+import Geospat from "./pages/Geospat";
+import About from "./pages/About";
+import Contact from "./pages/Contact";
+import NotFoundPage from "./pages/404";
+
+class App extends Component {
+  render () {
   return (
-    <div className="App">
+    <Router>
     <Navbar />
-      <Route exact path="/" component={Home} />
-      <Route exact path="/geospat" component={Geospat} />
-      <Route exact path="/about" component={About} />
-      <Route exact path="/contact" component={Contact} />
-    </div>
+      <Switch>
+        <Route exact path="/" component={Home} />
+        <Route exact path="/geospat" component={Geospat} />
+        <Route exact path="/about" component={About} />
+        <Route exact path="/contact" component={Contact} />
+        <Route exact path="/404" component={NotFoundPage} />
+        <Redirect to="/404"/>
+      </Switch>
+    </Router>
   );
-}
+  }
+  }
 
 export default App;

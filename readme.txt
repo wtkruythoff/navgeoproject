@@ -1,8 +1,10 @@
 Create a Multi Page Web App With React
 https://www.youtube.com/watch?v=xMNhDf5-hvk&ab_channel=ConorBailey
 
+
 React Navbar Tutorial - Beginner React JS Project
 https://www.youtube.com/watch?v=fL8cFqhTHwA&ab_channel=BrianDesign
+
 
 Montserrat Regular 400
 https://fonts.google.com/specimen/Montserrat?sidebar.open=true&selection.family=Montserrat
@@ -18,6 +20,7 @@ https://www.youtube.com/watch?v=zT62eVxShsY&ab_channel=TraversyMedia
 
 Intro to React Router for Beginners (Multi-Page Apps)
 https://www.youtube.com/watch?v=hjR-ZveXBpQ&ab_channel=CoderOne
+note: call pages as global variables!!!! (Much easier.)
 
 
 React & Express Starter Pack For Full Stack Development
